@@ -5,9 +5,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
   $su = $_POST["su"];
 
-  if (!strlen($su) || !is_numeric($su) || strpos($su, ".") !== FALSE) 
+  if (!strlen($su) || !is_numeric($su))
   {
-    $errmsg[] = "整数が入力されていません";
+    $errmsg[] = "実数が入力されていません";
   }
 }
 
