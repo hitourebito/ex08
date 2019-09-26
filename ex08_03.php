@@ -37,5 +37,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
       }
     ?>
   </div>
-  
+  <form action= "<?= $_SERVER["SCRIPT_NAME"]?>" method="post">
+    <div>
+      文字列<br/>
+      <input type="text" name="str" value="<?= $str ?>" size="30"><br/>
+      桁位置<br/>
+      <input type="text" name="ichi" value="<?= $ichi ?>" size="2"><br/>
+      桁数<br/>
+      <input type="text" name="keta" value="<?= $keta ?>" size="2"><br/>
+      <br/>
+      <input type="submit" value="検索"/>
+    </div>
+  </form>
 </body>
