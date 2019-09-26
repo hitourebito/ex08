@@ -11,4 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   }
 }
 
+else 
+{
+  $errmsg[] = "htmlから入力してください";
+}
 ?>
