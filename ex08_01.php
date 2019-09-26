@@ -22,6 +22,11 @@ else
 <head>
   <meta charset="UTF-8">
   <title>ex08_01.php</title>
+  <style>
+    #err {
+      color: red;
+    };
+  </style>
 </head>
 <body>
 
