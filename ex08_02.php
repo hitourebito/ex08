@@ -42,7 +42,16 @@ else
   <?php 
     if (!count($errmsg)) 
     {
-      
+      $msg = "";
+
+      $work = sprintf("整数: %'*8d", $su);
+      $msg .= htmlspecialchars($work, ENT_QUOTES) . "<br/>";
+      $work = sprintf("実数: %'*8.2f", $su);
+      $msg .= htmlspecialchars($work, ENT_QUOTES) . "<br/>";
+      $work = sprintf("文字: %'*-8s", $su);
+      $msg .= htmlspecialchars($work, ENT_QUOTES) . "<br/>";
+
+      echo $msg;
     }
   ?>
 </body>
