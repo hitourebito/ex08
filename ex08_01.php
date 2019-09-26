@@ -16,3 +16,13 @@ else
   $errmsg[] = "htmlから入力してください";
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ex08_01.php</title>
+</head>
+<body>
+
+</body>
